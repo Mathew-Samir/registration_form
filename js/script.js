@@ -21,7 +21,8 @@ function checkUsername() {
 // Email Validtion
 function checkEmail() {
   const emaiPattern =
-    /^[a-zA-Z0-9._%+-]+@(gmail\.com|gmail\.org|gmail\.net|yahoo\.com|yahoo\.org|yahoo\.net)$/i;
+    /* /^[a-zA-Z0-9._%+-]+@(gmail\.com|gmail\.org|gmail\.net|yahoo\.com|yahoo\.org|yahoo\.net)$/i; */
+  /^[a-zA-Z0-9._%+-]+@(gmail\.com|gmail\.org|gmail\.net|yahoo\.com)$/i;
   if (!emailInput.value.match(emaiPattern)) {
     return emailField.classList.add("invalid"); //adding invalid class if email value do not mathced with email pattern
   }
